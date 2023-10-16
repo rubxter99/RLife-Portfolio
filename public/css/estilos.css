@@ -58,7 +58,9 @@
 .card:hover, .card:focus {
   background-size: 100% 2px;
 }
-
+.btn.btn-espec{
+  color:#818488;
+}
 .card .card-text {
   color: #252829;
 }
