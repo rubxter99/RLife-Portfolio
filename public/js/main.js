@@ -1,6 +1,5 @@
 import * as THREE from 'three';
-import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
-import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+import { FBXLoader } from './FBXLoader.js';
 
 //Create a Three.JS Scene
 const scene = new THREE.Scene();
@@ -18,14 +17,14 @@ let object;
 let controls;
 
 //Set which object to render
-let objToRender = 'eye';
+let objToRender = 'baile';
 
 //Instantiate a loader for the .gltf file
 const loader = new GLTFLoader();
 
 //Load the file
 loader.load(
-  `models/${objToRender}/scene.gltf`,
+  `fbx/${objToRender}/baile.fbx`,
   function (gltf) {
     //If the file is loaded, add it to the scene
     object = gltf.scene;
