@@ -267,3 +267,97 @@ form{
   top: 0;
   left: 0;
 }
+
+/* Showcase */
+#showcase {
+	width: 100%;
+  
+}
+
+.showcase-row {
+	display: flex;
+	padding: 20px 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente para hacer el texto más legible */
+  
+  border-radius: 10px;
+  color: #fff; /* Color de texto */
+}
+
+.showcase-row-title p.large {
+	padding-bottom: 15px;
+  font-family: 'Poppins';
+  font-size:58px;
+  font-style:normal;
+  font-weight:700;
+  line-height:70px;
+  letter-spacing:-1px;
+ 
+}
+/* Utility Classes */
+.fondo {
+	margin: auto;
+  position: relative;
+	max-width: 1920px;
+	overflow: auto;
+  width: 100%;
+  max-height: 1080px;
+	
+}
+
+
+
+
+
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente para hacer el texto más legible */
+  padding: 20px;
+  border-radius: 10px;
+  color: #fff; /* Color de texto */
+}
+.btn {
+	display: inline-block;
+	font-size: 15px;
+	padding: 12px 23px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	border-radius: 4px;
+}
+
+.btn-round {
+	border-radius: 20px;
+}
+
+.btn-dark {
+	background: #e9a075;
+	border: 1px solid #e9a075;
+	color: #fff;
+}
+
+.btn-dark:hover {
+	background: #d19069;
+	color: #fff;
+}
+#video-background {
+  width: 100%;
+  height: auto;
+}
+@media (max-width: 768px) {
+  .showcase-row-title p.large {
+    padding-bottom: 15px;
+    font-family: 'Poppins';
+    font-size:18px;
+    font-style:normal;
+    font-weight:700;
+    line-height:70px;
+    letter-spacing:-1px;
+   
+  }
+}
